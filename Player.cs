@@ -23,11 +23,6 @@ namespace HearthstoneInjectionDll
             CompareDeckIdsAndLoadDeckCards();
         }
 
-        public static void OnSpellZoneChanged(string prevZone, string nameInfinitive)
-        {
-            Debug.AppendDesktopLog("OnSpellZoneChanged", prevZone + "//" + nameInfinitive);
-        }
-
         /// <summary>
         /// For minions only
         /// </summary>

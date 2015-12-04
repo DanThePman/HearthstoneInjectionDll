@@ -57,7 +57,6 @@ class Card : MonoBehaviour
             this.ShowCard();
             if ((this.m_prevZone is ZoneGraveyard) && this.m_entity.IsSpell())
             {
-                HearthstoneInjectionDll.Player.OnSpellZoneChanged(this.m_prevZone.ToString(), this.name);
                 this.m_actor.Hide();
                 this.ActivateActorSpell(SpellType.SUMMON_IN);
             }
