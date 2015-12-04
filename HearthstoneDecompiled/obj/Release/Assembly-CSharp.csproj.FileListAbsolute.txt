@@ -1,0 +1,1 @@
+C:\Users\Daniel\Documents\Visual Studio 2015\Projects\HearthstoneInjectionDll\HearthstoneDecompiled\obj\Release\Assembly-CSharp.csprojResolveAssemblyReference.cache

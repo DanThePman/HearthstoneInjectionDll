@@ -1,0 +1,10 @@
+C:\Users\Daniel\Documents\Visual Studio 2015\Projects\HearthstoneInjectionDll\bin\Release\HearthstoneInjectionDll.dll
+C:\Users\Daniel\Documents\Visual Studio 2015\Projects\HearthstoneInjectionDll\bin\Release\HearthstoneInjectionDll.pdb
+C:\Users\Daniel\Documents\Visual Studio 2015\Projects\HearthstoneInjectionDll\bin\Release\UnityEngine.dll
+C:\Users\Daniel\Documents\Visual Studio 2015\Projects\HearthstoneInjectionDll\bin\Release\UnityEngine.xml
+C:\Users\Daniel\Documents\Visual Studio 2015\Projects\HearthstoneInjectionDll\obj\Release\HearthstoneInjectionDll.Properties.Resources.resources
+C:\Users\Daniel\Documents\Visual Studio 2015\Projects\HearthstoneInjectionDll\obj\Release\__HearthstoneInjectionDll.csproj.GenerateResource.Cache
+C:\Users\Daniel\Documents\Visual Studio 2015\Projects\HearthstoneInjectionDll\obj\Release\HearthstoneInjectionDll.dll
+C:\Users\Daniel\Documents\Visual Studio 2015\Projects\HearthstoneInjectionDll\obj\Release\HearthstoneInjectionDll.pdb
+C:\Program Files (x86)\Hearthstone\Hearthstone_Data\Managed\HearthstoneInjectionDll.dll
+C:\Program Files (x86)\Hearthstone\Hearthstone_Data\Managed\HearthstoneInjectionDll.pdb

@@ -1,0 +1,4007 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>7.10.3077</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BE69957D-DDCB-4F8C-B651-7C34F5A1D6A8}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon />
+    <AssemblyKeyContainerName />
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <AssemblyOriginatorKeyFile />
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Assembly-CSharp</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject />
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>0.0</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile />
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile />
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn />
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile />
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile />
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn />
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Assembly-CSharp-firstpass">
+      <Name>Assembly-CSharp-firstpass</Name>
+      <HintPath>Assembly-CSharp-firstpass.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <Name>ICSharpCode.SharpZipLib</Name>
+      <HintPath>ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="IFacebook">
+      <Name>IFacebook</Name>
+      <HintPath>IFacebook.dll</HintPath>
+    </Reference>
+    <Reference Include="mscorlib">
+      <Name>mscorlib</Name>
+      <HintPath>mscorlib.dll</HintPath>
+    </Reference>
+    <Reference Include="PlayMaker">
+      <Name>PlayMaker</Name>
+      <HintPath>PlayMaker.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+      <HintPath>System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core">
+      <Name>System.Core</Name>
+      <HintPath>System.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.Xml</Name>
+      <HintPath>System.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <Name>UnityEngine</Name>
+      <HintPath>UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <Name>UnityEngine.UI</Name>
+      <HintPath>UnityEngine.UI.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccountAPI.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AccountCreationFlipbook.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AccountLicenseMgr.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ACCOUNT_TAG.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AchieveManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Achievement.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AchievementDbId.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ActivateToggle.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ActivateZoneDeck.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ActiveFilterButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ActorAttackSpell.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ActorNames.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ActorPool.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ActorState.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ActorStateAnimObject.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ActorStateMgr.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ActorStateType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AddFriendFrame.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AddFriendFrameBones.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AddToDeckButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AdTrackingManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AdventureBossCoin.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AdventureBossDef.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AdventureChooserButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AdventureChooserDescription.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AdventureChooserSubButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AdventureChooserTray.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AdventureClassChallenge.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AdventureClassChallengeButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AdventureClassChallengeChestButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AdventureCompleteReward.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AdventureCompleteRewardData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AdventureConfig.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AdventureDataDbId.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AdventureDbId.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AdventureDef.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AdventureGenericButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AdventureMission.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AdventureMissionDeckPickerDisplay.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AdventureMissionDisplay.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AdventureMissionDisplayTray.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AdventureModeDbId.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AdventureOption.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AdventureProgressMgr.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AdventurePurchaseScreen.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AdventureRewardsCardback.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AdventureRewardsChest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AdventureRewardsDisplayArea.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AdventureRewardsPreview.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AdventureScene.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AdventureStore.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AdventureSubDef.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AdventureSubScene.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AdventureSubScenes.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AdventureWing.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AdventureWingDef.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AdventureWingEventTable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AdventureWingOpenBanner.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AdventureWingProgressDisplay.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AdventureWingProgressDisplay_LOE.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AdventureWingUnlockSpell.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AlertPopup.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AllyAttackDef.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AmbushSpell.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Anchor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AncientCurseSpell.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AndroidDeviceSettings.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AndroidStore.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AnimatedLowPolyPack.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AnimateTransitions.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AnimationEventSetParent.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AnimationUtil.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AnimPositionResetter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AnimSpeed.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ApplicationMgr.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ApplicationMode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ArcaneDustAmount.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ArcaneDustReward.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ArcaneDustRewardData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ArcEnd.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ArcEndSphere.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ArenaMedal.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ArenaPhoneControl.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ArenaRecord.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ArenaStore.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ArenaTicketReward.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ArenaTrayDisplay.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ArmorSpell.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ArrowModeButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ArtVerificationManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AspectRatioDependentPosition.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Asset.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AssetBundleInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AssetCache.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AssetFamily.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AssetFamilyBundleInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AssetFamilyPathInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AssetLoader.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AssetPathInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AssignActorPortraitToChildren.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AttackImpactDef.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AttackInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AttackRangePrefabs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AttackSpellController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AttackType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AudioSourceSettings.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AuthenticationAPI.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AutomationInterpretor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BackBehavior.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BackButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Banner.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BannerManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BannerPopup.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BaseUI.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BaseUIBones.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BaseUIPrefabs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BattleNet.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BattleNetAPI.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BattleNetClient.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BattleNetCSharp.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BattleNetDll.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BattleNetErrors.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BattleNetLogSource.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BattleNetPacket.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BeveledButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BigCard.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BigCardEnchantmentPanel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BIReport.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Blizzard.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BnetAccount.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BnetAccountId.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BnetBar.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BnetBarFriendButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BnetBarKeyboard.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BnetBarMenuButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BnetBattleTag.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BnetChallengeMgr.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BnetEntityId.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BnetErrorInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BnetEventMgr.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BnetFeature.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BnetFeatureEvent.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BnetFriendChangelist.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BnetFriendMgr.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BnetGameAccount.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BnetGameAccountId.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BnetInvitation.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BnetInvitationId.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BnetNearbyPlayerChangelist.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BnetNearbyPlayerMgr.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BnetNotification.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BnetParty.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BnetPlayer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BnetPlayerChange.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BnetPlayerChangelist.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BnetPresenceField.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BnetPresenceMgr.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BnetProgramId.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BnetUtils.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BnetWhisper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BnetWhisperMgr.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Board.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BoardCameras.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BoardDdId.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BoardEvents.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BoardStandardGame.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BoardTutorial.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Bolvar.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Bool_MobileOverride.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BoosterDbId.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BoosterPackReward.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BoosterPackRewardData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Bounce.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BounceScale.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BouncingBlade.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Box.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BoxCamera.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BoxCameraEventTable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BoxCameraStateInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BoxDisk.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BoxDiskStateInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BoxDoor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BoxDoorStateInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BoxDrawer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BoxDrawerStateInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BoxEventInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BoxEventMgr.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BoxEventType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BoxLightInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BoxLightMgr.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BoxLightState.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BoxLightStateType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BoxLogo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BoxLogoStateInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BoxMenuButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BoxSpinner.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BoxSpinnerStateInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BoxStartButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BoxStartButtonStateInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BoxStateInfoList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BranchScript.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BrawlSpell.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BreakingNews.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BRM01_GrimGuzzler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BRM02_DarkIronArena.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BRM03_Thaurissan.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BRM04_Garr.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BRM05_BaronGeddon.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BRM06_Majordomo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BRM07_Omokk.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BRM08_Drakkisath.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BRM09_RendBlackhand.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BRM10_Razorgore.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BRM11_Vaelastrasz.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BRM12_Chromaggus.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BRM13_Nefarian.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BRM14_Omnotron.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BRM15_Maloriak.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BRM16_Atramedes.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BRM17_ZombieNef.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BRMAnvilWeapons.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BRM_MissionEntity.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BugReporter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ButtonListMenu.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ButtonListMenuDef.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CameraFade.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CameraMask.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CameraSelector.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CameraShakeMgr.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CameraShaker.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CameraUtils.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CanvasAnchor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CanvasAnchors.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CanvasScaleMode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Card.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CardAudio.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CardBack.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CardBackData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CardBackDbId.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CardBackDeckDisplay.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CardBackDisplay.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CardBackDragEffect.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CardBackInfoManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CardBackManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CardBackPagingArrow.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CardBackPagingArrowBase.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CardBackPagingArrowPhone.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CardBackReward.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CardBackRewardData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CardBackSummon.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CardBurn.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CardBurstCommon.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CardBurstEpic.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CardBurstLegendary.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CardBurstRare.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CardColorSwitcher.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CardCrafting_WepPartSetParent.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CardCrafting_WepSetParent.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CardDef.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CardEffect.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CardEffectDef.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CardFlair.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CardId.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CardInfoPane.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CardPortraitQuality.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CardReward.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CardRewardCount.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CardRewardData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CardSoundData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CardSoundSpell.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CardSpecificMultiVoData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CardSpecificMultiVoLine.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CardSpecificMultiVoSpell.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CardSpecificVoData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CardSpecificVoSpell.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CardStandIn.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CardTypeBanner.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Carousel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CarouselItem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ChallengeAPI.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ChallengeType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ChangedCardMgr.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ChannelAPI.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ChatBubbleFrame.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ChatFrames.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ChatLog.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ChatLogFrame.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ChatLogFrameBones.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ChatLogFramePrefabs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ChatLogMessageFrame.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ChatMgr.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ChatMgrBubbleInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ChatMgrPrefabs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ChatUtils.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CheatMgr.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Cheats.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CheckBox.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ChestVisual.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ChoiceCardMgr.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CHOICE_TYPE.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Cinematic.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ClassChallengeUnlock.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ClassChallengeUnlockData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ClassFilterButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ClassFilterButtonContainer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ClassFilterHeaderButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ClassProgressBar.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ClassProgressInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ClassSpecificVoData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ClassSpecificVoLine.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ClassSpecificVoSpell.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ClientConnection!1.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ClientOption.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ClientRequestManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ClockHandSet.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CoinEffect.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CollectionActorPool.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CollectionCardBack.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CollectionCardCache.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CollectionCardCount.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CollectionCardLock.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CollectionCardStack.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CollectionCardVisual.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CollectionClassTab.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CollectionCoverDisplay.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CollectionDeck.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CollectionDeckBoxVisual.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CollectionDeckInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CollectionDeckSlot.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CollectionDeckTileActor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CollectionDeckTray.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CollectionDeckValidator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CollectionDeckViolation.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CollectionDeckViolationCardIdOverflow.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CollectionDeckViolationDeckSize.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CollectionDeckViolationType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CollectionDraggableCardVisual.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CollectionFilter!1.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CollectionFilterFunc.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CollectionFilterSet.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CollectionHeroDef.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CollectionHeroSkin.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CollectionInputMgr.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CollectionManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CollectionManagerDisplay.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CollectionManagerScene.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CollectionNewDeckButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CollectionPageDisplay.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CollectionPageLayoutSettings.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CollectionPageManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CollectionPageManagerTouchBehavior.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CollectionSearch.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CollectionSetFilterDropdown.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CollectionSetFilterDropdownItem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CollectionSetFilterDropdownToggle.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CollectionTextFilter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Compute32.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ConfigFile.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ConnectAPI.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ConnectionIndicator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ConsecrationEffect.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ConstructCard.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ContentHandle.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CraftCardCountTab.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CraftingButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CraftingManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CraftingModeButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CraftingTray.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CraftingUI.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CreateButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CreditsDisplay.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CreditsScene.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Crush.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Currency.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CurrencyFrame.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CustomActionTest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CustomDeck.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CustomDeckBones.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CustomEditClass.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CustomEditField.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CustomEditTypeUtils.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DamageSplatSpell.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Dbf.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DbfColumn.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DbfDataType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DbfField.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DbfLocValue.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DbfRecord.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DbfUtils.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DbfXml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DeadSecretGroup.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DeathrattleSummonSpell.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DeathSpellController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Debug1v1Button.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DebugConsole.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DebugConsoleBroadcaster.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DebugMissionButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DebugUtils.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DeckBigCard.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DeckCardBarFlareUp.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DeckCardBarSummonIn.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DeckCardBarSummonInForge.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DeckHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DeckHelperVisual.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DeckInfoManaBar.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DeckPickerHero.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DeckPickerMode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DeckPickerTray.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DeckPickerTrayDisplay.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DeckTrayCardBackContent.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DeckTrayCardListContent.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DeckTrayContent.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DeckTrayDeckListContent.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DeckTrayDeckTileVisual.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DeckTrayHeroSkinContent.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DefeatScreen.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DefeatTwoScoop.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DefLoader.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DemoMgr.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DemoMode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DesktopChatLogUI.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DevicePreset.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DialogBase.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DialogManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DictionaryList!2.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DictionaryListItem!2.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DisableMesh_ColorAlpha.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DisableMesh_ColorBlack.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DisableMesh_Intensity.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Disable_iOS.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Disable_LowQuality.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DisconnectMgr.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DisenchantBar.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DisenchantButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DLLUtils.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Downloader.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DownloadManifest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DraftCardVisual.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DraftDeckTray.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DraftDisplay.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DraftInputManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DraftManaCurve.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DraftManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DraftScene.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DragCardSoundEffects.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DragRotator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DragRotatorAxisInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DragRotatorInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DrawMorphedCardSpell.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DrawWireframe.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DropdownControl.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DropdownMenuItem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DyingSecretGroup.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EchoingOozeSpell.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EchoOfMedivh.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EditorFacebookAccessToken.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EditType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ElectroScript.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EmoteEntry.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EmoteEntryDef.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EmoteHandler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EmoteOption.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EmoteType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EndGameScreen.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EndGameTwoScoop.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EndTurnButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EndTurnButtonReminder.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EnemyEmoteHandler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EnterTheColiseumSpell.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Entity.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EntityBase.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EntityDef.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EnumUtils.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Error.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ErrorParams.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ErrorReporter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ErrorType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="EventListener!1.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ExistingAccoundSound.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ExistingAccountPopup.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ExternalChallenge.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FatalErrorDialog.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FatalErrorMessage.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FatalErrorMgr.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FatalErrorScene.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FatalErrorScreen.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FatigueSpellController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FB.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FBAppRequestsFilterGroup.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FbDebugOverride.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FBScreen.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FBSettings.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FeignDeath.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FileUtils.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FilteredArtStack.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FindGameEventData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FindGameState.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FixedActionType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FixedRewardsMgr.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FixedRewardType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Flipbook.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="floatyObj.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="floatyObj2.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Float_MobileOverride.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FollowObject.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FontDef.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FontTable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FontTableEntry.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ForgeMedal.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ForgeTicketReward.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ForgeTicketRewardData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FourCC.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FramedRadioButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FriendChallengeEvent.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FriendChallengeMgr.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FriendListBaseFriendFrame.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FriendListButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FriendListChallengeButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FriendListChatIcon.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FriendListCurrentGameFrame.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FriendListFrame.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FriendListFrameBasePrefabs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FriendListFriendFrame.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FriendListFriendFrameBones.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FriendListFriendFrameOffsets.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FriendListGameIcon.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FriendListItemHeader.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FriendListNearbyPlayerFrame.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FriendListNearbyPlayerFrameBones.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FriendListNearbyPlayerFrameOffsets.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FriendListRecruitFrame.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FriendListRecruitFrameBones.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FriendListRecruitFrameOffsets.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FriendListRecruitFramePrefabs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FriendListRecruitUI.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FriendListRequestFrame.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FriendListUIElement.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FriendlyChallengeDialog.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FriendlyChallengeHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FriendlyDisplay.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FriendlyScene.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FriendMgr.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FriendsAPI.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FriendUtils.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FullDef.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FullScreenAntialiasing.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FullScreenEffects.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FullScreenFXMgr.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FunctionLib.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GameColors.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GameDbf.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GameDbfIndex.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GameEntity.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GameLayer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GameLayerExtensions.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GameMenu.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GameMgr.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GameObject_MobileOverride.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GameOpenPack.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Gameplay.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GameplayErrorCloud.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GameplayErrorManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GamePresenceField.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GamesAPI.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GameState.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GameStringCategory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GameStrings.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GameStringTable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GamesWonCrown.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GamesWonIndicator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GamesWonIndicatorSegment.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GamesWonSegment.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GameToast.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GameToastMgr.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GameUtils.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GAME_TAG.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GemObject.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GeneralStore.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GeneralStoreAdventureContent.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GeneralStoreAdventureContentDisplay.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GeneralStoreAdventurePane.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GeneralStoreAdventureSelectorButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GeneralStoreContent.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GeneralStoreHeroesContent.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GeneralStoreHeroesContentDisplay.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GeneralStoreHeroesPane.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GeneralStoreHeroesSelectorButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GeneralStoreMode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GeneralStorePackBuyButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GeneralStorePacksContent.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GeneralStorePacksContentDisplay.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GeneralStorePackSelectorButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GeneralStorePacksPane.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GeneralStorePane.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GeneralStorePhoneCover.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GeneralStoreRewardsCardBack.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GeneralUtils.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GetRenderToTextureMaterial.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GetRenderToTextureRenderObject.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GhostCard.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GhostCardEffect.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Glow.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GoldenHeroEvent.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GoldReward.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GoldRewardData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GraphicsManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GraphicsQuality.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GraphicsResolution.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Gryphon.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GUISkinContainer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GVGLaserGun.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GvG_Promotion.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="HandActorCache.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="HashPrimeNumbers.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="HealthyGamingMgr.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="HeroAttackDef.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="HeroCoin.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="HeroLabel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="HeroPickerButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="HeroPickerButtonBones.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="HeroPickerDisplay.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="HeroSkinHeroPower.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="HeroSkinInfoManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="HeroSwapSpell.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="HeroWeld.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="HeroXPBar.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="HiddenCard.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="HighlightExclude.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="HighlightRender.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="HighlightRenderState.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="HighlightSilhouetteInclude.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="HighlightState.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="HighlightStateType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="HistoryCard.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="HistoryChildCard.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="HistoryInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="HistoryInfoType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="HistoryItem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="HistoryManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="HTTPHeader.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Hub.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IBattleNet.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IChatLogUI.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IConnectionListener!1.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="InactivePlayerKicker.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="IncrementRenderQueue.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="InitialConversationLines.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="InnKeepersSpecial.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="InputCategory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="InputManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="InputScheme.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="InputUtil.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Int_MobileOverride.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="InviteRequest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ISelectableTouchListItem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ISslConnectionListener.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ITouchListItem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="iTween.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="iTweenCollection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="iTweenFSMEvents.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="iTweenFSMType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="iTweenIterator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="iTweenManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="iTweenPath.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="JaraxxusHeroSpell.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="JaraxxusMinionSpell.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="JoustSpellController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="KelThuzad_StealTurn.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="KeywordHelpPanel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="KeywordHelpPanelManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LightningAnimator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LightningCtrl.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Link.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LoadingPopupDisplay.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LoadingScreen.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Locale.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Localization.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LocalizedTexture.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LocalOptions.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LocalRenderEffect.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="localRenderEffects.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="localRenderMask.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LocalStorageAPI.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LocalStorageFileState.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LOE01_Zinaar.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LOE02_Sun_Raider_Phaerix.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LOE03_AncientTemple.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LOE04_Scarvash.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LOE07_MineCart.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LOE08_Archaedas.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LOE09_LordSlitherspear.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LOE10_Giantfin.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LOE12_Naga.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LOE13_Skelesaurus.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LOE14_Steel_Sentinel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LOE15_Boss1.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LOE16_Boss2.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LOE_DeckTakeEvent.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LOE_MissionEntity.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Log.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LogArchive.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Logger.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LogInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LoginPointer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LogLevel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LogTarget.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LogThreadHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LookAtCamera.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MageExplosion.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ManaCostBar.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ManaCounter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ManaCrystal.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ManaCrystalEventSpells.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ManaCrystalMgr.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ManaFilterTab.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ManaFilterTabManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Map!2.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MassDisenchant.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MassDisenchantFX.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MassDisenchantSound.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MassDisenchantTab.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MatchingPopupDisplay.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MatchingQueueTab.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MaterialContainer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MaterialReplacementExclude.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MaterialSoftFlicker.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Material_MobileOverride.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MATSample.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Medal.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MedalInfoTranslator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MemoryCategory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MemUtils.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MenuButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MeshAnimation.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MeshSwapPegButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MethodDescriptor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MiddleGamesWonSegment.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MimironsHead.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MineCartRushArt.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MinionPieces.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MinionShake.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Misdirection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MissionEntity.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MobileActorGem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MobileCallbackManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MobileChatLogFrame.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MobileChatLogMessageFrame.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MobileChatLogUI.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MobileChatNotification.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MobileDeviceLocale.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MobileDeviceType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MobileEnv.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MobileFriendListItem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MobileHitBox.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MobileOverrideValue!1.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MobileTransform.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MobileTransformOverride.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MoneyOrGTAPPTransaction.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MountReward.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MountRewardData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MoveToTarget.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MulliganManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MulliganReplaceLabel.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MulliganTimer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MultiSliceElement.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MusicConfig.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MusicManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MusicPlaylist.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MusicPlaylistType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MusicStingerData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MusicStingerSpell.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MusicTrack.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MusicTrackType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="NameBanner.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="NameBannerGamePlayPhone.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Navigation.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="NAX01_AnubRekhan.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="NAX02_Faerlina.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="NAX03_Maexxna.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="NAX04_Noth.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="NAX05_Heigan.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="NAX06_Loatheb.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="NAX07_Razuvious.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="NAX08_Gothik.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="NAX09_Horsemen.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="NAX10_Patchwerk.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="NAX11_Grobbulus.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="NAX12_Gluth.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="NAX13_Thaddius.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="NAX14_Sapphiron.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="NAX15_KelThuzad.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="NAX7_05_Spell.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="NAX_MissionEntity.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="NefarianSwapSpell.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="NestedPrefab.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="NetCache.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Network.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="NewNineSliceElement.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="NewThreeSliceElement.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="NineSliceElement.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="NoGTAPPTransactionData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="NormalButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Notification.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="NotificationAPI.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="NotificationManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="NTree!1.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="NydusLink.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Object_MobileOverride.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OffClickCatcher.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OffScreenRenderFX.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OnKeyboardPressed.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OnlineEventType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OnlinePlayer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OnOffToggleButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Option.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OptionDataTables.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Options.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OptionsMenu.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OptionsMenuPhone.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OptionsMigration.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OrientedBounds.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OSCategory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OverlayUI.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OverrideCustomDeathSpell.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OverrideCustomSpawnSpell.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PacketFormat.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PackOpening.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PackOpeningBones.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PackOpeningButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PackOpeningCard.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PackOpeningCardCarouselItem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PackOpeningCardRarityInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PackOpeningDirector.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PackOpeningRarity.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PackOpeningScene.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PackOpeningSocket.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PageTurn.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ParticleEffects.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ParticleEffectsAttractor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ParticleEffectsOrientation.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ParticleEffectsOrientUpVectors.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ParticleEffectsRepulser.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ParticlePlaybackSpeed.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ParticleSystemScaler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ParticleSystemSizes.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PartyAPI.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PartyError.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PartyId.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PartyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PartyInvite.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PartyMember.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PartyType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PaymentMethod.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PearlOfTidesSpell.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PegasusPacket.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PegCursor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PegUI.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PegUIContainer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PegUICustomBehavior.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PegUIElement.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PegUIElement_MobileOverride.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PendingBnetFriendChangelist.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PendingTransaction.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PlatformCategory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PlatformDependentValue!1.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PlatformSetting!1.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PlatformSettings.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PlayAnimRandomStart.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PlayButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PlayEffect.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Player.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PlayerChatInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PlayerIcon.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PlayerPortrait.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PlayErrors.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PlayGameScene.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PlayMakerAnimatorIKProxy.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PlayMakerAnimatorMoveProxy.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PlayMakerAnimatorStateSynchronization.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PlayMakerUtils.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PlayNewParticles.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PlayOnce.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PoisonSeeds.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PolarityShift.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PolymorphSpell.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Pool!1.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Power.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PowerHistoryInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PowerProcessor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PowerQueue.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PowerSpellController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PowerTask.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PowerTaskList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PracticeAIButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PracticeDisplay.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PracticePickerTrayDisplay.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PremiumMaterialSwitcher.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PresenceAdventureMode.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PresenceAPI.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PresenceMgr.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PresenceStatus.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PresenceTutorial.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProfanityAPI.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProgressBar.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProjectedShadow.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProtocolHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="QuestLog.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="QuestLogButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="QuestProgressToast.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="QuestTile.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="QuestToast.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="QueueList!1.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="QuickBlendShape.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="QuickChatFrame.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="QuickChatFrameBones.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="QuickChatFramePrefabs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RadioButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RadioButtonGroup.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RafaamStaffOfOriginationSpell.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RainOfFire.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RandomAudioClip.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RandomDeckChoices.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RandomDeckMaker.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RandomPickPlaymakerEvent.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RandomPlayAnimation.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RandomScale.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RandomSpawnTimed.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RandomWeather.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RankChangeStar.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RankChangeTwoScoop.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RankChangeType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RankedPlayDisplay.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RankedPlayToggleButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RankedRewardChest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RankedRewardChest2D.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RankedWinsPlate.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RankMgr.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RarityFX.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RarityGem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RaritySound.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RDMDeckEntry.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RDM_Deck.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ReconnectMgr.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ReconnectType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RecruitAFriendFrame.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RecruitAFriendFrameBones.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RecruitListMgr.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RegionMenu.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RemoteActionHandler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RenderToTexture.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RenderUtils.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ReplaceMaterials.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Reset.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ResourcesAPI.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ResourcesAPIPendingState.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ReticlePerspectiveAdjust.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Reward.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RewardBanner.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RewardBoxesDisplay.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RewardCard.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RewardCardBack.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RewardData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RewardPackage.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RewardUtils.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RewardVisualTiming.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RibbonButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RibbonButtonsUI.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RichPresence.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RightGamesWonSegment.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RotateAnim.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RotateByMovement.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RotateOverTime.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RotateOverTimePingPong.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RPCConnection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RPCConnectionMetering.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RPCContext.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RPCContextDelegate.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RPCMeterConfigParser.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SaleBanner.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ScenarioDbId.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Scene.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SceneDebugger.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SceneMgr.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SceneUtils.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ScreenCategory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ScreenDensityCategory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ScreenEffect.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ScreenEffectGlow.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ScreenEffectsMgr.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ScreenEffectsRender.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ScreenResizeDetector.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Scrollbar.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ScrollbarControl.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ScrollBarThumb.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ScrollingUVs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SeasonEndDialog.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SeasonTimeRemainingToast.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Secret.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SecretBannerDef.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SecretSpellController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SelfAnimUtils.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SendPMEvent.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ServerConnection!1.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ServerOption.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ServerOptionFlag.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ServiceDescriptor.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SetParenttByName.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SetRenderQue.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SetRenderSettings.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ShaderPreCompiler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ShaderTime.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ShaderUtils.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Shadowform.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ShakeMinionIntensity.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ShakeMinionsAction.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ShakeMinionType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ShakeObject.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SharedPrefabEnvironmentPlaceholderSorta.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ShowAllCardsTab.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ShowFPS.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ShownUIMgr.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SlidingTray.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SnapActorToGameObject.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SocialToast.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SocialToastMgr.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SoundCategory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SoundConfig.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SoundDataTables.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SoundDef.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SoundDuckedCategoryDef.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SoundDucker.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SoundDuckingDef.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SoundManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SoundPlaybackLimitClipDef.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SoundPlaybackLimitDef.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SoundPlayClipArgs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SoundUtils.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SparkScript.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Spawner.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SpawnToDeckSpell.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SpawnToHandSpell.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SpecialEventManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SpecialEventType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SpecialEventVisualDef.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SpecialEventVisualMgr.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SpectatorManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Spell.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SpellActionInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SpellAreaEffect.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SpellAreaEffectInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SpellCache.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SpellChainInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SpellClassTag.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SpellController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SpellFacing.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SpellFacingOptions.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SpellGeneratedTarget.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SpellImpactInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SpellImpactPrefabs.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SpellImpl.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SpellLocation.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SpellMissileInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SpellMoveToTarget.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SpellMoveToTargetAuto.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SpellPath.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SpellPathType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SpellPlayerSide.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SpellStartInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SpellState.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SpellStateAnimObject.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SpellStateAudioSource.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SpellStateType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SpellTable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SpellTableEntry.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SpellTargetBehavior.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SpellTargetInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SpellType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SpellUtils.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SpellVisualShowTime.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SpellZoneTag.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SplashScreen.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SpriteSheet.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SslCertBundleInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SslClientConnection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SslParameters.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SslSocket.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="StageTester.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="StageTransistion.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="StandardGameEntity.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="StandardPegButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="StandardPegButtonNew.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="StateEventTable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Stealth.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="StealthDistortionMissile.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Store.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="StoreAdventureDef.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="StoreButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="StoreChallengePrompt.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="StoreDisclaimer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="StoreDoneWithBAM.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="StoreLegalBAMLinks.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="StoreManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="StoreMiniSummary.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="StoreMobilePurchase.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="StorePackDef.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="StorePurchaseAuth.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="StoreQuantityPrompt.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="StoreRadioButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="StoreSendToBAM.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="StoreSummary.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="StoreType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="StoreURL.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="StringUtils.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="String_MobileOverride.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="StrippingUtil.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SummonInForge.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SummonOutForge.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SuperSpell.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SwipeHandler.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TagDelta.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TagDeltaSet.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tags.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TagSet.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TAG_CARDTYPE.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TAG_CARD_SET.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TAG_CLASS.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TAG_ENCHANTMENT_VISUAL.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TAG_FACTION.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TAG_GOLD_REWARD_STATE.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TAG_MULLIGAN.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TAG_PLAYSTATE.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TAG_PREMIUM.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TAG_RACE.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TAG_RARITY.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TAG_STATE.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TAG_STEP.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TAG_TYPE.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TAG_ZONE.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TargetAnimUtils.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TargetAnimUtils2.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TargetListAnimUtils.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TargetListAnimUtils2.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TargetReticleManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TARGET_RETICLE_TYPE.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TavernBrawlDisplay.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TavernBrawlManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TavernBrawlMenuButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TavernBrawlMission.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TavernBrawlScene.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TB01_RagVsNef.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TB02_CoOp.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TB03_InspireVSJoust.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TB04_DeckBuilding.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TB05_GiftExchange.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TB06_SinglePlayerTrial.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TB07_FactionWars.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TB_ChooseYourFateBuildaround.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TB_ChooseYourFateRandom.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TempleArt.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TextField.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TextureOffsetState.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TextureOffsetStates.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TextUtils.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TGTArcheryTarget.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TGTArrow.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TGTFood.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TGTGrandStand.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TGTTargetDummy.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ThinkEmoteManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ThreeSliceElement.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ThreeSliceTextElement.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TiledBackground.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TimeDelete.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TimeUtils.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TipCategory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tokenizer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tooltip.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TooltipZone.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TouchList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TouchListScrollbar.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tournament.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TournamentDisplay.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TournamentMedal.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TournamentScene.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TrackMouseMovement.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TransformOverride.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TransformProps.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TransformUtil.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Transform_MobileOverride.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TransitionPopup.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TransitionPulse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TranslatedMedalInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TraySection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TreePostTraverse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TreePreTraverse.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TreeVisitor!1.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TriggerSpellController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TurnStartIndicator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TurnStartManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TurnTimer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TurnTimerState.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TurnTimerUpdate.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TutorialEntity.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TutorialKeywordManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TutorialKeywordTooltip.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TutorialLesson1.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TutorialLesson2.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TutorialLesson3.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TutorialLesson4.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TutorialLesson5.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TutorialProgress.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TutorialProgressScreen.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tutorial_01.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tutorial_02.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tutorial_03.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tutorial_04.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tutorial_05.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tutorial_06.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TwistingNetherDrainInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TwistingNetherFloatInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TwistingNetherLiftInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TwistingNetherSpell.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TwistingNetherSqueezeInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UberFloaty.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UberText.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UberTextMgr.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UIBButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UIBFollowObject.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UIBHighlight.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UIBHighlightStateControl.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UIBInfoButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UIBObjectSpacing.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UIBPopup.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UIBScrollable.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UIBScrollableItem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UIBScrollableTrack.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UIEvent.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UIEventType.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UIHeader.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UIReleaseAllEvent.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UIStatus.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UnearthedRaptorSpell.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UniversalInputManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UnopenedPack.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UnopenedPackStack.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UnrankedPlayToggleButton.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UpdateManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UriUtils.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="VarianWrynn.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="VarKey.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vars.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="VarsInternal.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vector2_MobileOverride.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Vector3_MobileOverride.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="VectorUtils.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Version.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="VictoryScreen.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="VictoryTwoScoop.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="VS.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="W8Touch.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WeaponSocketDecoration.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WeaponSocketMgr.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WeaponSocketRequirement.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WeaponUVWorldspace.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WebAuth.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WebLoginCanvas.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WelcomeQuests.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WhisperAPI.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WingDbId.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WorldDimensionIndex.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="XmlUtils.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Zone.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ZoneChange.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ZoneChangeList.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ZoneDeck.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ZoneGraveyard.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ZoneHand.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ZoneHero.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ZoneHeroPower.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ZoneMgr.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ZonePlay.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ZoneSecret.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ZoneTransitionStyle.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ZoneWeapon.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="____AnonType0!2.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="____AnonType1!2.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent />
+    <PostBuildEvent />
+  </PropertyGroup>
+</Project>
