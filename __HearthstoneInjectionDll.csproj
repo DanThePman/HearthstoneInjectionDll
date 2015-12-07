@@ -75,19 +75,17 @@
     <Compile Include="Card.cs" />
     <None Include="__InjectedCode\Real\OnZoneOfCardChanged.cs" />
     <None Include="__InjectedCode\Real\OnEnemyDiscard.cs" />
-    <None Include="__InjectedCode\BetterAnimations\Actor.cs" />
-    <None Include="__InjectedCode\BetterAnimations\CardDraw.cs" />
+    <None Include="__InjectedCode\legacy\BetterAnimations\Actor.cs" />
+    <None Include="__InjectedCode\legacy\BetterAnimations\CardDraw.cs" />
     <None Include="__InjectedCode\legacy\HandCards.cs" />
-    <None Include="__InjectedCode\legacy\OnActionSpell.cs" />
-    <None Include="__InjectedCode\legacy\SpellCastedOnBirth.cs" />
-    <None Include="__InjectedCode\legacy\SpellSummonInHand.cs" />
+    <None Include="__InjectedCode\Real\OnSpellCast.cs" />
     <None Include="__InjectedCode\Real\EndMulligan_GetCards.cs" />
     <None Include="__InjectedCode\Real\GameStart_LoadDeck.cs" />
-    <None Include="__InjectedCode\Real\IsDrawHandled.cs" />
-    <None Include="__InjectedCode\Real\OnDeckLoaded.cs" />
+    <None Include="__InjectedCode\Real\DrawFriendlyCard.cs" />
+    <None Include="__InjectedCode\Real\OnDeckLoaded_Collection.cs" />
     <None Include="__InjectedCode\Real\OnFindGame_GetDeckId.cs" />
     <None Include="__InjectedCode\Real\OnGUI.cs" />
-    <None Include="__InjectedCode\Real\REDIRECT_LOG.cs" />
+    <None Include="__InjectedCode\Real\REDIRECT_LOG_GangUp.cs" />
     <None Include="__InjectedCode\Real\TurnChanged.cs" />
   </ItemGroup>
   <ItemGroup>

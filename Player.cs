@@ -11,9 +11,37 @@ namespace HearthstoneInjectionDll
         public static long currentDeckId;
 
         private static int gangUpRepeatCount; //gang up spams 4 times on casting
-        private static int forgottenTorchRepeatCount;
 
         protected static int lastTurnStartTick;
+
+        /// <summary>
+        /// Of OnBirth of Spell.cs (target not available for Gang up)
+        /// </summary>
+        /// <param name="cardNameInfinitive"></param>
+        /// <param name="isFriendly"></param>
+        public static void OnSpellCast(string cardNameInfinitive, bool isFriendly)
+        {
+            string sourceId = ConvertFromInfinitiveToId(cardNameInfinitive);
+
+            if (isFriendly) //without gang up
+            {
+                if (sourceId == "LOE_002")
+                {
+                    OnForgottenTorchCast();
+                }
+            }
+            else
+            {
+                Enemy.AddPlayed(sourceId);
+                Enemy.RemoveOrReduceHandCard(sourceId);
+
+                if (sourceId == "AT_035")
+                {
+                    OnBeneathTheGroundsCast();
+                }
+            }
+
+        }
 
         public static void OnGameStart()
         {
@@ -62,6 +90,7 @@ namespace HearthstoneInjectionDll
         {
             string target = ConvertFromInfinitiveToId(targetInfinitive);
             Enemy.RemoveOrReduceHandCard(target);
+            Enemy.AddPlayed(target);
         }
         public static void OnNewTurn()
         {
@@ -69,7 +98,7 @@ namespace HearthstoneInjectionDll
         }
 
         /// <summary>
-        ///     On Effect Activate (Spams)
+        /// On Object Activate (Spams)
         /// </summary>
         /// <param name="callerInfinitive">Source or spell name</param>
         /// <param name="targetInfinitive">Target or  nothing  </param>
@@ -82,56 +111,38 @@ namespace HearthstoneInjectionDll
                 var target = ConvertFromInfinitiveToId(targetInfinitive);
                 var playerIdOfCaller = ConvertFromInfinitiveToPlayerId(callerInfinitive);
 
-                if (playerIdOfCaller == "2")
-                    Enemy.RemoveOrReduceHandCard(caller);
-
                 CheckGangUpCast(caller, target, playerIdOfCaller);
-                CheckForgottenTorch(caller, playerIdOfCaller);
             }
         }
 
-        private static void CheckForgottenTorch(string caller, string playerIdOfCaller)
+        private static void OnForgottenTorchCast()
         {
-            if (caller == "LOE_002" && playerIdOfCaller == "1") //forgotten torch of myself
+            foreach (var deckCard in currentDeckCards)
             {
-                if (forgottenTorchRepeatCount == 0)
+                if (deckCard.ID == "LOE_002t") //Roaring Torch to add
                 {
-                    foreach (var deckCard in currentDeckCards)
-                    {
-                        if (deckCard.ID == "LOE_002t") //Roaring Torch to add
-                        {
-                            deckCard.Count++;
-                            ++forgottenTorchRepeatCount;
-                            return;
-                        }
-                    }
-
-                    var gangUpTargetCard = new Card("LOE_002t");
-                    currentDeckCards.Add(gangUpTargetCard);
+                    deckCard.Count++;
+                    return;
                 }
-                forgottenTorchRepeatCount++;
             }
 
-            if (forgottenTorchRepeatCount == 4)
-                forgottenTorchRepeatCount = 0;
+            var gangUpTargetCard = new Card("LOE_002t");
+            currentDeckCards.Add(gangUpTargetCard);
         }
 
-        private static void CheckBeneathTheGrounds(string castName)
+        private static void OnBeneathTheGroundsCast()
         {
-            if (castName.Contains("Beneath_The_Grounds")) //enemy?
+            foreach (var deckCard in currentDeckCards)
             {
-                foreach (var deckCard in currentDeckCards)
+                if (deckCard.ID == "AT_036t")
                 {
-                    if (deckCard.ID == "AT_036t")
-                    {
-                        deckCard.Count += 3;
-                        return;
-                    }
+                    deckCard.Count += 3;
+                    return;
                 }
-
-                var nerubianCard = new Card("AT_036t") {Count = 3};
-                currentDeckCards.Add(nerubianCard);
             }
+
+            var nerubianCard = new Card("AT_036t") {Count = 3};
+            currentDeckCards.Add(nerubianCard);
         }
 
         private static void CheckGangUpCast(string caller, string target, string playerIdOfCaller)
@@ -221,7 +232,6 @@ namespace HearthstoneInjectionDll
             currentDeckCards = new List<Card>();
 
             gangUpRepeatCount = 0;
-            forgottenTorchRepeatCount = 0;
 
             lastTurnStartTick = 0;
         }

@@ -2,7 +2,6 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
-using UnityEngine;
 #endregion 
 
 #region " Referenced assemblies "
@@ -16,34 +15,29 @@ using UnityEngine;
 // - IFacebook v0.0.0.0
 // - System.Xml v2.0.5.0
 // - UnityEngine.UI v1.0.0.0
-// - HearthstoneInjectionDll v0.0.0.0
-// - HearthstoneInjectionDll v1.0.0.0
 // - Assembly-CSharp v0.0.0.0
-// - mscorlib v4.0.0.0
-// - HearthstoneInjectionDll v0.0.0.0
+// - HearthstoneInjectionDll v1.0.0.0
 // - Assembly-CSharp v0.0.0.0
 #endregion 
 
-class Spell : MonoBehaviour
+class Spell
 {
     // Limited support!
     // You can only reference methods or fields defined in the class (not in ancestors classes)
     // Fields and methods stubs are needed for compilation purposes only.
     // Reflexil will automaticaly map current type, fields or methods to original references.
-    void OnAction(SpellStateType prevStateType)
+    void OnIdle(SpellStateType prevStateType)
     {
-        Network.HistActionStart networkAction = this.m_taskList.GetSourceAction();
-        object targetEntityObj =
-            networkAction.Target != null &&
-            GameState.Get().GetPrintableEntity(networkAction.Target) != null
-            ?
-            GameState.Get().GetPrintableEntity(networkAction.Target)
-            :
-            "noTarget";
-
-        HearthstoneInjectionDll.Player.OnAction(this.name, targetEntityObj.ToString());
-        this.UpdateTransform();
         this.FireStateStartedCallbacks(prevStateType);
+        try
+        {
+            if (this.GetSourceCard().GetEntity().IsSpell())
+            {
+                HearthstoneInjectionDll.Player.OnSpellCast(this.GetSourceCard().name,
+                    this.GetSourceCard().GetEntity().IsControlledByFriendlySidePlayer());
+            }
+        }
+        catch { }
     }
 
     #region " Methods stubs "
@@ -328,6 +322,7 @@ class Spell : MonoBehaviour
         return default(bool);
     }
 
+
     void ChangeState(SpellStateType stateType)
     {
     }
@@ -382,7 +377,7 @@ class Spell : MonoBehaviour
     {
     }
 
-    void OnIdle(SpellStateType prevStateType)
+    void OnAction(SpellStateType prevStateType)
     {
     }
 
@@ -469,11 +464,6 @@ class Spell : MonoBehaviour
     }
 
     bool AddSinglePowerTarget()
-    {
-        return default(bool);
-    }
-
-    bool AddSinglePowerTarget_FromSourceAction(Network.HistActionStart sourceAction)
     {
         return default(bool);
     }

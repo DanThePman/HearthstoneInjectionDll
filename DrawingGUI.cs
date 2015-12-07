@@ -5,6 +5,8 @@ namespace HearthstoneInjectionDll
 {
     public class DrawingGUI : Player
     {
+        private static bool disable = false;
+
         private static readonly GUIStyle turnTimerStyle = new GUIStyle
         {
             fontSize = 20
@@ -15,7 +17,22 @@ namespace HearthstoneInjectionDll
         /// </summary>
         public static void ExtendGUI()
         {
+            if (disable)
+            {
+                if (GUI.Button(new Rect(10 + 200 + 10, 10, 200, 40), "Show"))
+                {
+                    disable = !disable;
+                }
+                return;
+            }
+
             GUI.Label(new Rect(10, 10, 200, 40), "By DanThePman");
+
+            if (GUI.Button(new Rect(10 + 200 + 10, 10, 200, 40), "Hide"))
+            {
+                disable = !disable;
+            }
+
             var lastColor = GUI.color;
 
             DrawOwnCards(lastColor);
@@ -60,7 +77,7 @@ namespace HearthstoneInjectionDll
                         ? "DMG: " +
                           enemyCard.Atk + " HP: " + enemyCard.Hp +
                           " Cost: " + enemyCard.Cost + "\n\n"
-                        : string.Empty;
+                        : " Cost: " + enemyCard.Cost + "\n\n";
 
                     GUI.color = Color.white;
                     GUI.Label(new Rect(
@@ -104,7 +121,7 @@ namespace HearthstoneInjectionDll
                         ? "DMG: " +
                           enemyCard.Atk + " HP: " + enemyCard.Hp +
                           " Cost: " + enemyCard.Cost + "\n\n"
-                        : string.Empty;
+                        : " Cost: " + enemyCard.Cost + "\n\n";
 
                     GUI.color = Color.white;
                     GUI.Label(new Rect(
@@ -166,7 +183,7 @@ namespace HearthstoneInjectionDll
                         ? "DMG: " +
                           shownCard.Atk + " HP: " + shownCard.Hp +
                           " Cost: " + shownCard.Cost + "\n\n"
-                        : string.Empty;
+                        : " Cost: " + shownCard.Cost + "\n\n";
 
                     GUI.color = Color.white;
                     GUI.Label(new Rect(xStart - 200, yStart, 190, 500), cardStats + shownCard.Description);
@@ -208,7 +225,7 @@ namespace HearthstoneInjectionDll
                         ? "DMG: " +
                           deckCard.Atk + " HP: " + deckCard.Hp +
                           " Cost: " + deckCard.Cost + "\n\n"
-                        : string.Empty;
+                        : " Cost: " + deckCard.Cost + "\n\n";
 
                     GUI.color = Color.white; //anti transparency                    
                     GUI.Label(new Rect(xStart - 200, yStart, 190, 500), cardStats + deckCard.Description);
