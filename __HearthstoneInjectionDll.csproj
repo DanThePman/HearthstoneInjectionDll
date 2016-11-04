@@ -9,7 +9,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>HearthstoneInjectionDll</RootNamespace>
     <AssemblyName>HearthstoneInjectionDll</AssemblyName>
-    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
   </PropertyGroup>
@@ -53,56 +53,46 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Assembly-CSharp, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Hearthstone\Hearthstone_Data\Managed\Assembly-CSharp.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
-    <Reference Include="UnityEngine">
-      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Hearthstone\Hearthstone_Data\Managed\UnityEngine.dll</HintPath>
+    <Reference Include="UnityEngine, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Hearthstone\Hearthstone_Data\Managed\UnityEngine.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Actions.cs" />
+    <Compile Include="Behaviour\Behaviour.cs" />
+    <Compile Include="Behaviour\Behaviour2.cs" />
     <Compile Include="Debug.cs" />
-    <Compile Include="DeckContainer.cs" />
-    <Compile Include="DeckManager.cs" />
-    <Compile Include="LanguageManager.cs" />
-    <Compile Include="Player.cs" />
-    <Compile Include="Enemy.cs" />
-    <Compile Include="DrawingGUI.cs" />
+    <None Include="__InjectedCode\SceneMgrAwake.cs" />
+    <None Include="__InjectedCode\IsMouseUp.cs" />
+    <None Include="__InjectedCode\IsMouseDown.cs" />
+    <None Include="__InjectedCode\Update.cs" />
+    <None Include="LibTemplate.cs" />
+    <Compile Include="Lib.cs" />
+    <Compile Include="Mullian\CardEffects.cs" />
+    <Compile Include="Mullian\CustomMinion.cs" />
+    <Compile Include="Mullian\DeckTypeDetector.cs" />
+    <Compile Include="Mullian\MainLists.cs" />
+    <Compile Include="Mullian\EntryPoint.cs" />
+    <Compile Include="Mullian\TGT.cs" />
+    <None Include="SandBox\InstructionReader.cs" />
+    <None Include="SandBox\Permissions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="Card.cs" />
-    <None Include="__InjectedCode\Real\OnZoneOfCardChanged.cs" />
-    <None Include="__InjectedCode\Real\OnEnemyDiscard.cs" />
-    <None Include="__InjectedCode\legacy\BetterAnimations\Actor.cs" />
-    <None Include="__InjectedCode\legacy\BetterAnimations\CardDraw.cs" />
-    <None Include="__InjectedCode\legacy\HandCards.cs" />
-    <None Include="__InjectedCode\Real\OnSpellCast.cs" />
-    <None Include="__InjectedCode\Real\EndMulligan_GetCards.cs" />
-    <None Include="__InjectedCode\Real\GameStart_LoadDeck.cs" />
-    <None Include="__InjectedCode\Real\DrawFriendlyCard.cs" />
-    <None Include="__InjectedCode\Real\OnDeckLoaded_Collection.cs" />
-    <None Include="__InjectedCode\Real\OnFindGame_GetDeckId.cs" />
-    <None Include="__InjectedCode\Real\OnGUI.cs" />
-    <None Include="__InjectedCode\Real\REDIRECT_LOG_GangUp.cs" />
-    <None Include="__InjectedCode\Real\TurnChanged.cs" />
+    <Compile Include="Core.cs" />
+    <None Include="__InjectedCode\GetMousePosition.cs" />
+    <None Include="__InjectedCode\GameStart.cs" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="LangFiles\AllSets.deDE.json" />
-    <EmbeddedResource Include="LangFiles\AllSets.enGB.json" />
-    <EmbeddedResource Include="LangFiles\AllSets.enUS.json" />
-    <EmbeddedResource Include="LangFiles\AllSets.esES.json" />
-    <EmbeddedResource Include="LangFiles\AllSets.esMX.json" />
-    <EmbeddedResource Include="LangFiles\AllSets.frFR.json" />
-    <EmbeddedResource Include="LangFiles\AllSets.itIT.json" />
-    <EmbeddedResource Include="LangFiles\AllSets.jaJP.json" />
-    <EmbeddedResource Include="LangFiles\AllSets.koKR.json" />
-    <EmbeddedResource Include="LangFiles\AllSets.plPL.json" />
-    <EmbeddedResource Include="LangFiles\AllSets.ptBR.json" />
-    <EmbeddedResource Include="LangFiles\AllSets.ruRU.json" />
-    <EmbeddedResource Include="LangFiles\AllSets.zhCN.json" />
-    <EmbeddedResource Include="LangFiles\AllSets.zhTW.json" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
@@ -111,6 +101,10 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
+  <ItemGroup>
+    <Analyzer Include="..\..\..\..\..\..\Program Files %28x86%29\Hearthstone\Hearthstone_Data\Managed\Behaviour.dll" />
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
